@@ -10,7 +10,7 @@
         <enum:EnumItemList x:Key="MorphBiomeEnum" EnumType="{x:Type Editor:MorphBiome}" x:Shared="false" SortBy="Value" />
     </UserControl.Resources>
     <StackPanel Orientation="Vertical">
-        <TextBlock Text="Morph to Biome" Margin="2" />
+        <TextBlock Text="特殊地形" Margin="2" ToolTip="特殊地形， 神圣地、腐化地等"/>
         <ComboBox Width="200" ItemsSource="{StaticResource MorphBiomeEnum}" SelectedValuePath="Value" SelectedValue="{Binding MorphBiomeTarget}" />
     </StackPanel>
 </UserControl>

@@ -14,7 +14,7 @@ namespace TEditXna.Editor.Tools
         {
             Icon = new BitmapImage(new Uri(@"pack://application:,,,/TEditXna;component/Images/Tools/eyedropper.png"));
             ToolType = ToolType.Pixel;
-            Name = "Picker";
+            Name = "拾取";
         }
 
         public override void MouseDown(TileMouseState e)

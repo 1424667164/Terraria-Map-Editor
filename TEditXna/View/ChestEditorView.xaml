@@ -59,12 +59,12 @@
         </Grid.RowDefinitions>
         
         <StackPanel Orientation="Horizontal" Grid.Row="0">
-            <TextBlock Text="Chest Name: " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" VerticalAlignment="Center" />
+            <TextBlock Text="箱子名称: " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" VerticalAlignment="Center" />
             <TextBox Margin="2" Width="100px" Height="20px" MaxLength="20" MaxLines="1" Text="{Binding SelectedChest.Name}" />
         </StackPanel>
         
         <StackPanel Orientation="Horizontal" Grid.Row="1">
-            <TextBlock Text="Chest Type: " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" VerticalAlignment="Center" />
+            <TextBlock Text="箱子类型: " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" VerticalAlignment="Center" />
             <ComboBox Width="150px"
                       ItemsSource="{Binding Source={StaticResource ChestsCollection}}"
                       SelectedValue="{Binding SelectedChest.ChestId, Mode=TwoWay}"
@@ -75,7 +75,7 @@
         </StackPanel>
         
         <StackPanel Orientation="Horizontal" Grid.Row="2">
-            <TextBlock Text="Chest Contents " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" />
+            <TextBlock Text="箱子内容 " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" />
             <TextBlock Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" DockPanel.Dock="Top">
                 <TextBlock.Text>
                     <MultiBinding StringFormat="({0}, {1})">
@@ -98,14 +98,14 @@
             </ListBox.ItemContainerStyle>
         </ListBox>
         <StackPanel Grid.Row="4">
-            <TextBlock Text="Edit Selected Item" Margin="2" Foreground="{DynamicResource TextBrush}" />
+            <TextBlock Text="编辑选中物品" Margin="2" Foreground="{DynamicResource TextBrush}" />
             <ContentControl ContentTemplate="{StaticResource ChestItemTemplate}"
                             Content="{Binding ElementName=ChestList, Path=SelectedItem}" />
         </StackPanel>
         <UniformGrid Grid.Row="5" Columns="2">
-            <Button Margin="2" Content="Cancel" Command="{Binding SaveChestCommand}"
+            <Button Margin="2" Content="取消" Command="{Binding SaveChestCommand}"
                     CommandParameter="{StaticResource False}" />
-            <Button Margin="2" Content="Save" Command="{Binding SaveChestCommand}"
+            <Button Margin="2" Content="保存" Command="{Binding SaveChestCommand}"
                     CommandParameter="{StaticResource True}" />
         </UniformGrid>
 

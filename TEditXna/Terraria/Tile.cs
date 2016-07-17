@@ -22,9 +22,13 @@ namespace TEditXNA.Terraria
 
     public enum LiquidType : byte
     {
+        [Description("无")]
         None = 0x0,
+        [Description("水")]
         Water = 0x01,
+        [Description("岩浆")]
         Lava = 0x02,
+        [Description("蜂蜜")]
         Honey = 0x03
     }
 

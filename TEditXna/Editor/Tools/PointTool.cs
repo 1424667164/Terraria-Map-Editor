@@ -14,7 +14,7 @@ namespace TEditXna.Editor.Tools
             : base(worldViewModel)
         {
             Icon = new BitmapImage(new Uri(@"pack://application:,,,/TEditXna;component/Images/Tools/point.png"));
-            Name = "Point";
+            Name = "µã";
             IsActive = false;
             ToolType = ToolType.Npc;
         }

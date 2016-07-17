@@ -15,7 +15,7 @@ namespace TEditXna.Editor.Tools
             : base(worldViewModel)
         {
             Icon = new BitmapImage(new Uri(@"pack://application:,,,/TEditXna;component/Images/Tools/paste.png"));
-            Name = "Paste";
+            Name = "Õ³Ìù";
             IsActive = false;
             ToolType = ToolType.Pixel;
         }

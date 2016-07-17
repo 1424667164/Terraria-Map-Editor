@@ -20,7 +20,7 @@ namespace TEditXna.Editor.Tools
             : base(worldViewModel)
         {
             Icon = new BitmapImage(new Uri(@"pack://application:,,,/TEditXna;component/Images/Tools/pencil.png"));
-            Name = "Pencil";
+            Name = "Ç¦±Ê";
             IsActive = false;
             ToolType = ToolType.Pixel;
         }

@@ -14,7 +14,7 @@
         <Grid Grid.Row="0">
             <StackPanel Orientation="Horizontal">
                 <ComboBox ItemsSource="{Binding CurrentWorld.NpcNames}" DisplayMemberPath="Value" SelectedValuePath="Key" x:Name="addNpcComboBox"></ComboBox>
-                <Button Command="{Binding NpcAddCommand}" CommandParameter="{Binding  Path=SelectedValue,ElementName=addNpcComboBox}" Content="Add Npc"></Button>
+                <Button Command="{Binding NpcAddCommand}" CommandParameter="{Binding  Path=SelectedValue,ElementName=addNpcComboBox}" Content="添加NPC"></Button>
             </StackPanel>
         </Grid>
         <ListBox Grid.Row="1"  MinHeight="100" ItemsSource="{Binding CurrentWorld.NPCs}">

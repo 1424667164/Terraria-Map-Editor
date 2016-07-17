@@ -20,7 +20,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Grid.Row="0">
-            <TextBlock Text="Sign Type: " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" VerticalAlignment="Center" />
+            <TextBlock Text="标签类型: " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" VerticalAlignment="Center" />
             <ComboBox Width="150px"
                       ItemsSource="{Binding Source={StaticResource SignsCollection}}"
                       SelectedValue="{Binding SelectedSign.SignId, Mode=TwoWay}"
@@ -30,7 +30,7 @@
                       HorizontalAlignment="Stretch" Margin="1,0" ItemsPanel="{StaticResource Template_ComboPanel}" />
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
-            <TextBlock Text="Sign Text " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" />
+            <TextBlock Text="标签文本 " Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" />
                 <TextBlock Foreground="{DynamicResource TextBrush}" Margin="2" FontWeight="Bold" >
                     <TextBlock.Text>
                         <MultiBinding StringFormat="({0}, {1})">
@@ -44,8 +44,8 @@
                HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" TextWrapping="Wrap"
 			   Margin="2" FontWeight="Bold" MaxLines="10" PreviewKeyDown="ValidateLines" />
         <UniformGrid Columns="2" Grid.Row="3">
-                <Button Margin="2" Content="Cancel"  Command="{Binding SaveSignCommand}" CommandParameter="{StaticResource False}" />
-                <Button Margin="2" Content="Save" Command="{Binding SaveSignCommand}" CommandParameter="{StaticResource True}" />
+                <Button Margin="2" Content="取消"  Command="{Binding SaveSignCommand}" CommandParameter="{StaticResource False}" />
+                <Button Margin="2" Content="保存" Command="{Binding SaveSignCommand}" CommandParameter="{StaticResource True}" />
             </UniformGrid>
 
     </Grid>

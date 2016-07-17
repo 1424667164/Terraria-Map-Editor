@@ -25,7 +25,7 @@ namespace TEditXna.Editor.Tools
             _preview.SetPixel(0, 0, 127, 0, 90, 255);
 
             Icon = new BitmapImage(new Uri(@"pack://application:,,,/TEditXna;component/Images/Tools/shape_square.png"));
-            Name = "Selection";
+            Name = "Ñ¡Ôñ";
             IsActive = false;
         }
 

@@ -38,7 +38,7 @@ namespace TEditXna.Editor.Tools
             : base(worldViewModel)
         {
             Icon = new BitmapImage(new Uri(@"pack://application:,,,/TEditXna;component/Images/Tools/paintbrush.png"));
-            Name = "Morph";
+            Name = "±‰–Œ";
             ToolType = ToolType.Brush;
         }
 
